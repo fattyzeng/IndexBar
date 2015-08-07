@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <!-- 
+        数据列表
+    the listview
+     -->
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+    <!-- 
+      快速索引栏
+   the quickindexbar
+     -->
+    <com.mystudy.ui.QuickIndexBar
+        android:id="@+id/qib"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#ff0000" />
+    <!-- 
+      显示字幕的标签
+   the textview of show character
+     -->
+     <TextView 
+           android:id="@+id/tv"
+           android:layout_width="160dp"
+           android:layout_height="80dp"
+           android:layout_centerInParent="true"
+           android:background="@drawable/bg_index"
+           android:gravity="center"
+           android:textSize="32sp"
+           android:textColor="#ffffff"
+           android:visibility="gone"
+         />
+
+</RelativeLayout>
